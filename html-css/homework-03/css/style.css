@@ -1,99 +1,104 @@
 :root {
-  --white-color: #ffffff;
-  --text-color: #626262;
-  --grey-color: #b4ad9e;
-  --blue-color: #03a9f4;
-  --primary-font-stack: "Playfair Display", serif;
+    --white-color: #ffffff;
+    --text-color: #626262;
+    --grey-color: #b4ad9e;
+    --blue-color: #03a9f4;
+    --primary-font-stack: "Playfair Display", serif;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 ::before,
 ::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  background-color: var(--white-color);
-  font-family: var(--primary-font-stack);
+    background-color: var(--white-color);
+    font-family: var(--primary-font-stack);
 }
 
 .container {
-  width: 900px;
-  margin: 0 auto;
-  background-color: var(--white-color);
+    width: 900px;
+    margin: 0 auto;
+    background-color: var(--white-color);
 }
 
 header {
-  background-color: var(--white-color);
+    background-color: var(--white-color);
 }
 
 .navigation .link {
-  color: var(--text-color);
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation ul {
-  text-align: center;
+    text-align: center;
 }
+
 .navigation li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .navigation li:not(:last-child) {
-  margin-right: 110px;
+    margin-right: 110px;
 }
 
 .navigation .link:hover,
 .navigation .link:focus {
-  color: var(--blue-color);
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1.7;
+    color: var(--blue-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .feauters .title {
-  color: var(--text-color);
-  font-size: 30px;
-  font-weight: 400;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .feauters .signature {
-  color: var(--grey-color);
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: "Ubuntu", sans-serif;
+    color: var(--grey-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .feauters .description {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .block {
-  display: inline-block;
-  width: 420px;
+    display: inline-block;
+    width: 420px;
 }
 
-.block:ntn-child(2n) {
-  margin-right: 0px;
+.block:nth-of-type(odd) {
+    margin-right: 56px;
+}
+
+.block:nth-last-of-type(n + 2) {
+    margin-bottom: 50px;
 }
 
 .button {
-  color: var(--text-color);
-
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 400;
-  font-family: "Playfair Display", serif;
-  cursor: pointer;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
 }
