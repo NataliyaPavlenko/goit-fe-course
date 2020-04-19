@@ -6,3 +6,32 @@ html {
 ::before,
 ::after {
     box-sizing: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.conteiner {
+    width: 1110px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.logo {
+    color: #1abc9c;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.
