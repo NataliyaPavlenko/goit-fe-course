@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("../fonts/MyriadPro-Regular.eot");
+    src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MyriadPro-Regular.woff") format("woff"),
+        url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url("../fonts/MyriadPro-Bold.eot");
+    src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MyriadPro-Bold.woff") format("woff"),
+        url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto',
+        sans-serif;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-family: "Myriad Pro Bold",
+        sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+}
+
+header {
+    background-color: #ffffff;
+
+}
+
+.logo {
+    color: #555252;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 32px;
+    float: left;
+}
+
+.logo::first-letter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #1abc9c;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 7px 0 0 0;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation .link {
+    color: #1f1212;
+    font-family: "Myriad Pro Bold", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: right;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+    color: #94e0d1;
+}
+
+.nav-menu {
+    float: left;
+}
+
+.container-main {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 15px 0 82px 0;
+
+}
+
+.navigation li:nth-last-of-type(n + 2) {
+    margin-right: 34px;
+}
