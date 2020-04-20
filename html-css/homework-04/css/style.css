@@ -45,7 +45,7 @@ body {
 }
 
 .container {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     padding: 15px 0 0 0;
 }
@@ -103,7 +103,7 @@ header {
 }
 
 .container-main {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     padding: 15px 0 82px 0;
 
