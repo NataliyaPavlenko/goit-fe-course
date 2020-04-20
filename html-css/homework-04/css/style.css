@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("../fonts/MyriadPro-Regular.eot");
+    src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MyriadPro-Regular.woff") format("woff"),
+        url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url("../fonts/MyriadPro-Bold.eot");
+    src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MyriadPro-Bold.woff") format("woff"),
+        url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -10,28 +30,164 @@ html {
 
 body {
     background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto',
+        sans-serif;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-family: "Myriad Pro Bold",
+        sans-serif;
 
 }
 
-.conteiner {
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
     width: 1110px;
     margin: 0 auto;
-    background-color: #ffffff;
-
 }
 
 header {
     background-color: #ffffff;
+
 }
 
 .logo {
-    color: #1abc9c;
+    color: #555252;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 32px;
+    float: left;
+}
 
+.logo::first-letter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #1abc9c;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation .link {
+    color: #1f1212;
+    font-family: "Myriad Pro Bold", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: right;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+    color: #94e0d1;
+}
+
+.nav-menu {
+    float: left;
+}
+
+.navigation li:nth-last-of-type(n + 2) {
+    margin-right: 34px;
+}
+
+.section-name {
+    color: #515151;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
 
 }
 
-.
+.section-name::after {
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    display: block;
+    margin: 32px auto 0px;
+}
+
+.product-category {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #323232;
+    text-transform: uppercase;
+    width: 255px;
+    height: 40px;
+
+}
+
+.photo {
+    background-color: #e9f0fd;
+    width: 255px;
+    height: 322px;
+}
+
+.reference {
+    color: #ffffff;
+    font-family: 'Roboto',
+        sans-serif;
+    background-color: #323232;
+    text-transform: uppercase;
+    width: 255px;
+    height: 40px;
+    text-decoration: none;
+
+}
+
+.edition {}
+
+.name {
+    width: 301px;
+    height: 44px;
+    color: #555252;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.text {
+    width: 335px;
+    height: 66px;
+    color: #555252;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.read-more {
+    width: 74px;
+    height: 14px;
+    color: #ffffff;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    background-color: #4ec6ab;
+
+}
