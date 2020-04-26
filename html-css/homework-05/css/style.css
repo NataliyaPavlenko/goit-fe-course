@@ -191,6 +191,71 @@ a {
     margin-bottom: 80px;
 }
 
+.package:not(:nth-of-type(4n)) {
+    margin: 0px 30px 30px 0px;
+}
+
+.package:nth-of-type(4n) {
+    margin: 0px 0px 30px 0px;
+}
+
+.name-block {
+    background: #323232;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.photo {
+    display: block;
+}
+
+.product {
+    background-color: #e9f0fd;
+    width: 255px;
+
+}
+
+.category {
+    float: left;
+    color: #ffffff;
+
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    width: 165px;
+    height: 40px;
+    margin: 0;
+    padding: 10px 9px 8px 14px;
+    letter-spacing: -0.36px;
+
+}
+
+.reference {
+    color: #ffffff;
+
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.price {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, .44);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    float: right;
+    text-decoration: none;
+    font-weight: 900;
+    min-width: 54px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+    letter-spacing: -0.36px;
+}
+
 
 
 footer {
