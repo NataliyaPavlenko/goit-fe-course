@@ -195,7 +195,6 @@ header {
     background-color: #e9f0fd;
     cursor: pointer;
     float: left;
-
 }
 
 .package:not(:nth-of-type(4n)) {
@@ -233,7 +232,6 @@ header {
     line-height: 26px;
     margin-bottom: 40px;
     margin-top: 6px;
-
 }
 
 .name::after {
