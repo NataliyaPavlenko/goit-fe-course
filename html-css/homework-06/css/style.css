@@ -102,10 +102,6 @@ img {
     position: relative;
 }
 
-/*.features {
-    margin-bottom: 90px;
-    }*/
-
 .features-title {
     text-align: center;
     font-family: 'Montserrat',
@@ -159,30 +155,23 @@ img {
 .features-text {
     font-family: 'Roboto',
         sans-serif;
-    font-weight: 300;
+
     font-size: 15px;
     color: rgb(153, 153, 153);
     line-height: 1.6;
 }
 
 .features-list-item {
-    position: relative;
-    text-align: left;
     background-repeat: no-repeat;
     flex-basis: 352px;
     padding-left: 62px;
     margin-bottom: 100px;
-
 }
 
 .features-list-item::before {
     content: "";
     display: block;
     width: 32px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 
 }
 
@@ -209,6 +198,22 @@ img {
 .icon-frame {
     background-image: url(../images/icons/frame.png);
 }
+
+
+.section-content {
+    font-size: 15px;
+    font-family: 'Roboto',
+        sans-serif;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    margin-bottom: 95px;
+    text-align: center;
+    padding: 0 120px 0 120px;
+}
+
+
+
+
 
 footer::before {
     content: "";
