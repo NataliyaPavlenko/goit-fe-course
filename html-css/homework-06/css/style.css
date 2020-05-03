@@ -169,9 +169,10 @@ img {
     position: relative;
     text-align: left;
     background-repeat: no-repeat;
-    flex-basis: 382px;
+    flex-basis: 352px;
     padding-left: 62px;
     margin-bottom: 100px;
+
 }
 
 .features-list-item::before {
