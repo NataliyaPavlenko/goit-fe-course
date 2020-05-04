@@ -24,29 +24,19 @@ img {
         sans-serif;
     font-family: 'Montserrat',
         sans-serif;
-    font-family: 'Kaushan Script',
-        cursive;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .visually-hidden {
-    /* Удаляем элемент из потока документа */
     position: absolute;
-    /* Временное решение для неверно произносимого, размазанного текста */
     white-space: nowrap;
-    /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
     width: 1px;
     height: 1px;
-    /* Скрываем вылезающий за границы контент */
     overflow: hidden;
-    /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
     border: 0;
     padding: 0;
-    /* Вырезаем ту часть контента, которая должна отображаться. */
-    /* Устаревшее свойство clip для старых браузеров */
     clip: rect(0 0 0 0);
-    /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
     clip-path: inset(50%);
-    /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
     margin: -1px;
 }
 
@@ -58,8 +48,6 @@ img {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 114px;
 }
 
 .navigation {
@@ -67,6 +55,7 @@ img {
     min-height: 50px;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 114px;
 }
 
 .logo {
@@ -97,25 +86,28 @@ img {
     color: rgb(149, 225, 211);
     text-transform: uppercase;
     font-weight: 600;
+    transition: color 200ms linear;
 }
 
-.navigation__list-item:hover .navigation_list-link {
+.navigation_list-link:hover,
+.navigation_list-link:focus {
     color: rgb(243, 129, 129);
 }
 
 .navigation_list-link::after {
     content: "";
     background-color: rgb(243, 129, 129);
-    width: 100%;
+    width: 0%;
     height: 3px;
     position: absolute;
     left: 0;
     top: 26px;
-    opacity: 0;
+    display: block;
+    transition: color 200ms linear;
 }
 
-.navigation__list-item:hover .navigation_list-link::after {
-    opacity: 1;
+.navigation_list-link:hover::after {
+    width: 100%;
 }
 
 .navigation__list-item {
@@ -131,7 +123,6 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 110px;
-
 }
 
 .features-title::after {
@@ -193,8 +184,6 @@ img {
     content: "";
     display: block;
     width: 32px;
-    /*background-position: left 20px top;*/
-
 }
 
 .icon-alarm {
@@ -221,7 +210,6 @@ img {
     background-image: url(../images/icons/frame.png);
 }
 
-
 .section-content {
     font-size: 15px;
     font-family: 'Roboto',
@@ -244,8 +232,9 @@ img {
 
 .team-wrap {
     position: relative;
+    transition: transform 200ms linear,
+        box-shadow 200ms linear;
 }
-
 
 .team-img {
     margin-bottom: 31px;
@@ -274,28 +263,42 @@ img {
 }
 
 .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     position: absolute;
     top: 0;
     left: 0;
-
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms linear,
+        visibility 200ms linear;
 }
 
 .social-list {
     display: flex;
+}
 
-
+.social-list__item:not(:last-child) {
+    margin-right: 1px;
 }
 
 .social-list__item-link {
-    display: block;
-    width: 56px;
-    height: 56px;
     background-color: rgb(252, 227, 138);
     background-repeat: no-repeat;
     background-position: center;
+    display: block;
+    width: 56px;
+    height: 56px;
+    transition: background-color 200ms linear;
+}
+
+.social-list__item-link:hover,
+.social-list__item-link:focus {
+    background-color: rgb(149, 225, 211);
 }
 
 .social-list__item-link-facebook {
@@ -314,9 +317,15 @@ img {
     background-image: url(../images/icons/instagram.png);
 }
 
+.team-list__item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
 
-
-
+.team-list__item:hover .team-wrap {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px rgb(149, 225, 211);
+}
 
 footer::before {
     content: "";
@@ -352,7 +361,7 @@ footer {
     height: 40px;
     width: 230px;
     padding-left: 12px;
-    padding-top,
+    padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid rgb(217, 217, 217);
     outline: 0;
