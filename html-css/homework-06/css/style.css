@@ -172,6 +172,7 @@ img {
     content: "";
     display: block;
     width: 32px;
+    /*background-position: left 20px top;*/
 
 }
 
