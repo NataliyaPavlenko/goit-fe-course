@@ -58,6 +58,37 @@
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1) rotate(30deg);
+        transform: scale(0.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+    }
+
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.jackInTheBox {
+    -webkit-animation-name: jackInTheBox;
+    animation-name: jackInTheBox;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +110,237 @@ img {
     height: auto;
 }
 
+.header {
+    background-color: rgb(255, 255, 255);
+}
+
 .container {
     width: 940px;
     margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.logo {
+    font-family: 'Pacifico';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgb(254, 209, 54);
+    text-decoration: none;
+    animation-name: jackInTheBox;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.navigation_list {
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.navigation_list-link {
+    font-size: 14px;
+    font-family: "Montserrat",
+        sans-serif;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+    line-height: 2.9;
+    text-align: center;
+    font-weight: 600;
+    transition: color 200ms linear;
+}
+
+.navigation_list-link:hover,
+.navigation_list-link:focus {
+    color: rgb(254, 209, 54);
+}
+
+/*SERVISES*/
+
+.services {
+    padding-top: 114px;
+}
+
+.services__title {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.services__content {
+    font-size: 16px;
+    font-family: 'Arapey',
+        sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.services__list-item {
+    background-repeat: no-repeat;
+    flex-basis: 280px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 124px;
+    text-align: center;
+}
+
+.services__list-item::before {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(254, 209, 54);
+    border-radius: 50%;
+    width: 72px;
+    height: 71px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 21px;
+}
+
+.services-name {
+    font-size: 16px;
+    font-family: "Montserrat",
+        sans-serif;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.services__list-item:first-child::before {
+    background-image: url(../img/icons/icon-basket.png);
+}
+
+.services__list-item:nth-child(2)::before {
+    background-image: url(../img/icons/icon-laptop.png);
+}
+
+.services__list-item:nth-child(3)::before {
+    background-image: url(../img/icons/icon-locked.png);
+}
+
+.services-text {
+    font-size: 14px;
+    font-family: "RobotoSlab";
+    color: rgb(119, 119, 119);
+}
+
+/*CONTACT*/
+
+.contact-services {
+    padding-top: 111px;
+    background-color: rgb(34, 34, 34);
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    min-height: 677px;
+}
+
+.contact-services__title {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-services__content {
+    font-size: 16px;
+    font-family: 'Arapey',
+        sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/*FORM*/
+.contact-form {
+    width: 455px;
+    height: 52;
+    margin: 0 auto;
+
+}
+
+..contact-form__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.contact-form__input {
+    display: block;
+    width: 100%;
+
+}
+
+.contact-form__input:not(:last-child) {
+    margin-bottom: 28px;
+
+}
+
+
+.contact-form__btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form__btn {
+    font-size: 18px;
+    font-family: "Montserrat",
+        sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 66px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Your Name 
+Your Email 
+Subject 
+Your Message */
+
+
+.next {
+    background-color: rgb(41, 41, 41);
+    min-height: 677px;
 }
