@@ -300,6 +300,12 @@ img {
   border-radius: 2px;
   margin-bottom: 30px;
   height: 52px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(187, 187, 187);
+  font-weight: 700;
+  line-height: 1.2;
+  outline: none;
 }
 
 input:focus,
@@ -340,6 +346,11 @@ input::placeholder {
   outline: none;
   padding-top: 20px;
   padding-left: 20px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(187, 187, 187);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 textarea::placeholder {
@@ -366,4 +377,5 @@ textarea::placeholder {
   border: none;
   margin-top: 30px;
   cursor: pointer;
+  outline: none;
 }
