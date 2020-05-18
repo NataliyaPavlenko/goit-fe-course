@@ -1,0 +1,13 @@
+@media screen and (min-width:375px) {
+    .header {
+        background-image: url(../images/banner/mob_object.png);
+    }
+}
+
+
+
+@media (min-width:748px) {
+    .header {
+        background-image: url(../images/banner/disp_object.png);
+    }
+}

@@ -1,119 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework-07</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/Normalize.css" />
-  </head>
 
-  <body>
-    <header class="container">
-      <nav class="navigation">
-        <a href="#" class="logo">Golden</a>
-        <ul class="navigation_list">
-          <li class="navigation__list-item">
-            <a href="#" class="navigation_list-link">home</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework-07</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/Normalize.css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navigation">
+      <a href="#" class="logo">Golden</a>
+      <ul class="navigation_list">
+        <li class="navigation__list-item">
+          <a href="#" class="navigation_list-link">home</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="#" class="navigation_list-link">services</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="#" class="navigation_list-link">portfolio</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="#" class="navigation_list-link">about</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="#" class="navigation_list-link">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="favours">
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">Services</h2>
+        <p class="services__content">
+          Proin iaculis purus consequat sem cure.
+        </p>
+        <ul class="services__list">
+          <li class="services__list-item icon-basket">
+            <h3 class="services-name">E-Commerce</h3>
+            <p class="services-text">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
           </li>
-          <li class="navigation__list-item">
-            <a href="#" class="navigation_list-link">services</a>
+          <li class="services__list-item icon-laptop">
+            <h3 class="services-name">Responsive Web</h3>
+            <p class="services-text">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
           </li>
-          <li class="navigation__list-item">
-            <a href="#" class="navigation_list-link">portfolio</a>
-          </li>
-          <li class="navigation__list-item">
-            <a href="#" class="navigation_list-link">about</a>
-          </li>
-          <li class="navigation__list-item">
-            <a href="#" class="navigation_list-link">contact</a>
+          <li class="services__list-item icon-locked">
+            <h3 class="services-name">Web Security</h3>
+            <p class="services-text">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main class="favours">
-      <section class="services">
-        <div class="container">
-          <h2 class="services__title">Services</h2>
-          <p class="services__content">
-            Proin iaculis purus consequat sem cure.
-          </p>
-          <ul class="services__list">
-            <li class="services__list-item icon-basket">
-              <h3 class="services-name">E-Commerce</h3>
-              <p class="services-text">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-            <li class="services__list-item icon-laptop">
-              <h3 class="services-name">Responsive Web</h3>
-              <p class="services-text">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-            <li class="services__list-item icon-locked">
-              <h3 class="services-name">Web Security</h3>
-              <p class="services-text">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <section class="contact-services">
+      <div class="container">
+        <h2 class="contact-services__title">Contact Us</h2>
+        <p class="contact-services__content">
+          Proin iaculis purus consequat sem cure.
+        </p>
+        <form action="#" method="GET" class="contact-form">
+          <div class="contact-form__block">
+            <input name="user-name" type="text" class="contact-form__input" placeholder="Your Name*" required
+              minlength="3" />
+            <input name="user-email" type="email" class="contact-form__input" placeholder="Your Email*" required />
+            <input name="user-subject" type="text" class="contact-form__input" placeholder="Subject" />
+          </div>
 
-      <section class="contact-services">
-        <div class="container">
-          <h2 class="contact-services__title">Contact Us</h2>
-          <p class="contact-services__content">
-            Proin iaculis purus consequat sem cure.
-          </p>
-          <form action="#" method="GET" class="contact-form">
-            <div class="contact-form__block">
-              <input
-                name="user-name"
-                type="text"
-                class="contact-form__input"
-                placeholder="Your Name*"
-                required
-                minlength="3"
-              />
-              <input
-                name="user-email"
-                type="email"
-                class="contact-form__input"
-                placeholder="Your Email*"
-                required
-              />
-              <input
-                name="user-subject"
-                type="text"
-                class="contact-form__input"
-                placeholder="Subject"
-              />
-            </div>
+          <textarea name="user-message" class="contact-form__message" placeholder="Your Message*" required
+            minlength="10" maxlength="100"></textarea>
 
-            <textarea
-              name="user-message"
-              class="contact-form__message"
-              placeholder="Your Message*"
-              required
-              minlength="10"
-              maxlength="100"
-            ></textarea>
+          <button type="submit" class="contact-form__btn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
 
-            <button type="submit" class="contact-form__btn">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
