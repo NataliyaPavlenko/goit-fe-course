@@ -5,6 +5,36 @@
 
     .menu {
         background-image: url(../images/banner/mob_object.png);
+        padding-top: 20px;
+        padding-bottom: 138px;
+    }
+
+    .button__nav-type {
+        margin-bottom: 120px;
+    }
+
+    .header__name {
+        font-size: 30px;
+        margin: 0 0 24px;
+    }
+
+    .header__text {
+        font-size: 18px;
+        margin: 0 auto 20px;
+        width: 218px;
+    }
+
+    .partners {
+        padding-top: 74px;
+        padding-bottom: 56px;
+    }
+
+    .partners__list {
+        margin-bottom: 30px;
+    }
+
+    .partners__list-item:not(:last-child) {
+        margin: 0 auto 30px;
     }
 }
 
@@ -19,24 +49,70 @@
         padding-bottom: 234px;
     }
 
-    .menu__nav {}
-
     .button__nav {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-
-
+        margin-bottom: 160px;
     }
 
-    .button__nav-type-item {}
+    .header__name {
+        font-size: 52px;
+        margin-bottom: 0 0 45px;
+    }
+
+    .header__text {
+        font-size: 24px;
+        margin: 0 auto 40px;
+    }
+
+    .partners {
+        padding-top: 76px;
+        padding-bottom: 40px;
+        max-width: 460px;
+    }
+
+    .partners__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .partners__list-item:nth-child(-n+2) {
+        margin-bottom: 60px;
+    }
+
+    .partners__list-item:nth-child(n+2) {
+        margin-bottom: 60px;
+    }
+
+    .partners__list-item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .partners__list-item-order01 {
+        order: 1;
+    }
+
+    .partners__list-item-order02 {
+        order: 2;
+    }
+
+    .partners__list-item-order03 {
+        order: 3;
+    }
+
+    .partners__list-item-order04 {
+        order: 4;
+
+    }
 
 }
 
 @media screen (min-width: 768px) and (max-width: 959px) {
     .container {
-        width: 100%;
+        width: 768px;
     }
 
     .menu {
@@ -47,4 +123,10 @@
 
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 960px) {
+    .container {
+        width: 960px;
+    }
+
+
+}

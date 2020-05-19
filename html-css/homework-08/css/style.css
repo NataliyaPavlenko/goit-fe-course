@@ -106,8 +106,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding-top: 20px;
-    padding-bottom: 138px;
+
 }
 
 .container {
@@ -117,10 +116,6 @@ a {
 
 .button__nav {
     margin-bottom: 40px;
-}
-
-.button__nav-type {
-    margin-bottom: 120px;
 }
 
 .button__nav-type-item {
@@ -158,12 +153,10 @@ a {
 }
 
 .header__name {
-    font-size: 30px;
     color: rgb(255, 255, 255);
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
-    margin: 0 0 24px;
 }
 
 .header__name-br {
@@ -171,18 +164,10 @@ a {
 }
 
 .header__text {
-    font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: rgb(255, 255, 255);
     line-height: 1.2;
-    margin: 0 auto 20px;
-    width: 218px;
-}
-
-.partners {
-    padding-top: 74px;
-    padding-bottom: 56px;
 }
 
 .find__partners {
@@ -211,14 +196,6 @@ a {
 .partners__photo {
     display: block;
     margin: 0 auto 24px;
-}
-
-.partners__list {
-    margin-bottom: 30px;
-}
-
-.partners__list-item:not(:last-child) {
-    margin: 0 auto 30px;
 }
 
 .partners__item-partner {
