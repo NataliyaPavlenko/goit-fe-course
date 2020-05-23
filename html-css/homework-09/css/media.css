@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 138px;
+        background-image: url(../images/banner/mob_object.png);
+    }
+
+    .logotype {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .register__column {
+        margin-bottom: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    .register__list {
+        justify-content: flex-end;
+    }
+}
