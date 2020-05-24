@@ -56,6 +56,11 @@
         margin-bottom: 160px;
     }
 
+    .header__title {
+        font-size: 50px;
+        margin: 0 0 24px;
+    }
+
     .header__description {
         font-size: 24px;
         margin: 0 auto 40px;
