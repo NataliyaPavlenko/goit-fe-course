@@ -380,6 +380,7 @@ img {
 
 .team {
     padding-top: 50px;
+    padding-bottom: 56px;
 }
 
 .team-list {
@@ -397,7 +398,7 @@ img {
 }
 
 .team-list__img {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     width: 380px;
 }
 
@@ -456,14 +457,6 @@ img {
     margin-right: 1px;
 }
 
-.social-list__item-svg {
-    fill: rgb(243, 129, 129);
-    width: 32px;
-    height: 32px;
-    transform: translate(40%, 40%);
-}
-
-
 .social-list__item-link {
     background-color: rgb(252, 227, 138);
     background-repeat: no-repeat;
@@ -479,6 +472,13 @@ img {
     background-color: rgb(149, 225, 211);
 }
 
+.social-list__item-svg {
+    fill: rgb(243, 129, 129);
+    width: 32px;
+    height: 32px;
+    transform: translate(40%, 40%);
+}
+
 
 
 footer {
@@ -488,7 +488,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
     text-align: left;
-    padding-top: 114px;
+    padding-top: 56px;
     padding-bottom: 24px;
 }
 
