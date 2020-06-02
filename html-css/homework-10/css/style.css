@@ -359,6 +359,7 @@ img {
     width: 32px;
 }
 
+
 .services-list__item-icon {
     width: 32px;
     height: 32px;
@@ -476,8 +477,10 @@ img {
     fill: rgb(243, 129, 129);
     width: 32px;
     height: 32px;
-    transform: translate(40%, 40%);
+
 }
+
+
 
 
 
@@ -520,6 +523,18 @@ footer {
     font-weight: 300;
 }
 
+.footer-wrapper__form-email:required:focus {
+    outline: none;
+}
+
+.footer-wrapper__form-email:required:valid:not(:placeholder-shown) {
+    border-color: rgb(187, 187, 187);
+}
+
+.footer-wrapper__form-email:required:invalid:not(:placeholder-shown) {
+    border-color: #f38181;
+}
+
 .footer-wrapper__form-btn {
     border: none;
     background-color: rgb(149, 225, 211);
@@ -532,6 +547,7 @@ footer {
     height: 40px;
     width: 150px;
     outline: 0;
+    cursor: pointer;
 }
 
 .footer-wrapper {
