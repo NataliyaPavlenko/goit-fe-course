@@ -1,0 +1,78 @@
+footer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 56px;
+  padding-bottom: 24px;
+}
+
+.footer-wrapper__about-link {
+  color: rgb(243, 129, 129);
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+}
+
+.form-email {
+  height: 40px;
+  width: 230px;
+  padding-left: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid rgb(217, 217, 217);
+  outline: 0;
+}
+
+.form-email::placeholder {
+  font-family: $second-font;
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+  color: rgb(217, 217, 217);
+  font-weight: 300;
+}
+
+.form-email:required:focus {
+  outline: none;
+}
+
+.form-email:required:valid:not(:placeholder-shown) {
+  border-color: rgb(187, 187, 187);
+}
+
+.form-email:required:invalid:not(:placeholder-shown) {
+  border-color: #f38181;
+}
+
+.footer-wrapper__form-btn {
+  border: none;
+  background-color: rgb(149, 225, 211);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  height: 40px;
+  width: 150px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container::before {
+  content: '';
+  background-color: rgb(229, 229, 229);
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 10px;
+}
