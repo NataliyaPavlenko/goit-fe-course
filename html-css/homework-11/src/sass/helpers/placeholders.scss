@@ -1,0 +1,11 @@
+/*Шаблон с набором свойств, которые мы можем переиспользовать у себя в коде*/
+
+%align-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%align-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
